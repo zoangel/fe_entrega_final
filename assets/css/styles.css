@@ -17,6 +17,17 @@
     font-size:13px;
 }
 
+.button:hover {
+    background-color:#3CDDF3;
+    cursor:pointer;
+}
+
+.shadow {
+    box-shadow: 0px 12px 20px -10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 12px 24px -10px rgba(0, 0, 0, 0.5);
+}
+
+
 .header {
     display:flex;
     justify-content:space-around;
@@ -36,6 +47,12 @@
 
 .header__menu a {
     color:#242E52;
+    font-size:13px;
+}
+
+
+.header__menu a:hover {
+    font-weight:bold;
 }
 
 
@@ -72,7 +89,8 @@
 
 .slide__p {
     font-size:16px;
-    font-height:medium;
+    line-height:1.2;
+    font-weight:400;
 }
 
 .hero__section_middle {
@@ -81,18 +99,22 @@
     padding:40px;
     display:flex;
     justify-content:space-around;
+    align-items:center;
 }
 
 .h3_question {
     font-size:36px;
     font-weight:bold;
     width:50%;
+    max-width:450px;
 }
 
 .p_response {
     font-size:16px;
     font-weight:normal;
     width:50%;
+    max-width:450px;
+    line-height:1.5;
 }
 
 .hero__section_cards {
@@ -100,7 +122,7 @@
     flex-wrap:wrap;
     align-items:center;
     justify-content:center;
-    gap:30px;
+    gap:50px;
     padding-top:40px;
     padding-bottom:40px;
     background-color:#FAFAFA;
@@ -110,15 +132,19 @@
     width:553px;
     height:158px;
     font-size:16px;
+    counter-increment: contador;
 }
 
-.numero {
+.card_title::before {
+    content: counter(contador, decimal-leading-zero);
     background-color:#8B48BF;
     color:#FFFFFF;
     font-size:16px;
     font-weight:bold;
     border-radius:50px;
-    padding:10px;
+    padding:7px 20px;
+    margin-right:10px;
+    float:left;
 }
 
 .hero__section_best {
@@ -129,9 +155,19 @@
     margin-bottom:100px;
 }
 
+.card_p {
+    margin-top:10px;
+    display:flex;
+    color:#B3B2B7;
+    font-size:16px;
+    line-height:1.5;
+    font-weight:200;
+}
+
 .title_best {
     font-size: 39px;
     font-weight:bold;
+    margin-top:50px;
 }
 
 .best__div_cards {
@@ -149,7 +185,15 @@
     align-items:center;
     justify-content:space-evenly;
     padding:0px 20px;
+    background-color:#FAFAFA;
 
+}
+
+.card__text {
+    color:#B9B9C1;
+    font-size:16px;
+    font-weight:medium;
+    text-align:center;
 }
 
 .footer {
@@ -184,6 +228,11 @@
     font-size:13px;
 }
 
+.footer__button:hover {
+    background-color:#3CDDF3;
+    cursor:pointer;
+    color:#FFFFFF;
+}
 
 .footer_options {
     display:flex;
@@ -191,6 +240,7 @@
     justify-content:space-around;
     height:247px;
     align-items:center;
+    position:relative;
 }
 
 .footer__social {
@@ -199,7 +249,7 @@
 }
 
 .footer__menu_navegacion li, .footer__menu_otros li {
-    padding:5px;
+    padding:8px;
 }
 
 
@@ -215,6 +265,8 @@
     display:flex;
     flex-direction:column;
     justify-content:space-around;
+    align-items:space-around;
+    height:150px;
 }
 
 .input_go {
@@ -226,5 +278,12 @@
 .copyright {
     color:#8C8C94;
     font-size:12.5px;
-    font-weight:medium;
+    font-weight:normal;
+    position:absolute;
+    bottom:20px;
+    right:50px;
+}
+
+@media (min-width:600px){
+
 }
