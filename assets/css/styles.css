@@ -1,0 +1,230 @@
+* {
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    text-decoration:none;
+    box-sizing:content-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+
+.button {
+    background-color:#8B48BF;
+    color:#FFFFFF;
+    border-radius:50px;
+    border:none;
+    padding:10px 20px;
+    font-size:13px;
+}
+
+.header {
+    display:flex;
+    justify-content:space-around;
+    padding:65px;
+}
+
+.logo {
+   width:108px;
+}
+
+.header__menu {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:28px;
+}
+
+.header__menu a {
+    color:#242E52;
+}
+
+
+.hero__section_slide {
+    display: flex;
+    height:260px;
+    width:80%;
+    margin:auto;
+    padding:50px;
+}
+
+.slide__div_img {
+    width:50%;
+    background-image:url('../img/padel-intro.png');
+    background-size:contain;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+.slide__div_content {
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    text-align:right;
+    gap:10px;
+    align-items:flex-end;
+    justify-content:space-around;
+}
+
+.slide__h2 {
+    font-size:50px;
+    font-weight:bold;
+}
+
+.slide__p {
+    font-size:16px;
+    font-height:medium;
+}
+
+.hero__section_middle {
+    background-color:#8B48BF;
+    color:#FFFFFF;
+    padding:40px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.h3_question {
+    font-size:36px;
+    font-weight:bold;
+    width:50%;
+}
+
+.p_response {
+    font-size:16px;
+    font-weight:normal;
+    width:50%;
+}
+
+.hero__section_cards {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color:#FAFAFA;
+}
+
+.card_wrap {
+    width:553px;
+    height:158px;
+    font-size:16px;
+}
+
+.numero {
+    background-color:#8B48BF;
+    color:#FFFFFF;
+    font-size:16px;
+    font-weight:bold;
+    border-radius:50px;
+    padding:10px;
+}
+
+.hero__section_best {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin-bottom:100px;
+}
+
+.title_best {
+    font-size: 39px;
+    font-weight:bold;
+}
+
+.best__div_cards {
+    display:flex;
+    justify-content:space-around;
+    gap:5px;
+}
+
+
+.card {
+    height:254px;
+    width:445px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+    padding:0px 20px;
+
+}
+
+.footer {
+    display:flex;
+    flex-direction:column;
+    bottom:0px;
+    width:100%;
+}
+
+
+.footer_purple {
+    background-color:#8B48BF;
+    color:#FFFFFF;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:224px;
+}
+
+.footer__h4 {
+    font-size:40px;
+    font-weight:bold;
+    width:30%;
+}
+
+.footer__button {
+    color:#8B48BF;
+    background-color:#FFFFFF;
+    padding:10px 20px;
+    border-radius:50px;
+    border:none;
+    font-size:13px;
+}
+
+
+.footer_options {
+    display:flex;
+    background-color:#1E1E26;
+    justify-content:space-around;
+    height:247px;
+    align-items:center;
+}
+
+.footer__social {
+    display:flex;
+    gap:5px;
+}
+
+.footer__menu_navegacion li, .footer__menu_otros li {
+    padding:5px;
+}
+
+
+.footer__menu_navegacion a {
+    color:#FFFFFF;
+}
+
+.footer__menu_otros a {
+    color:#FFFFFF;
+}
+
+.footer__div_redes {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.input_go {
+    border-radius:50px;
+    padding:10px 20px;
+    border:none;
+}
+
+.copyright {
+    color:#8C8C94;
+    font-size:12.5px;
+    font-weight:medium;
+}
